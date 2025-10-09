@@ -206,14 +206,16 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sambutan Kepsek</a>
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sambutan
+                                        Kepsek</a>
                                 </li>
-                               
+
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi & Misi</a>
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi
+                                        & Misi</a>
                                 </li>
-                                 <li>
+                                <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah</a>
                                 </li>
@@ -272,8 +274,8 @@
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sirkulasi</a>
                                 </li>
-                               
-                               
+
+
                                 {{-- <li aria-labelledby="dropdownNavbarLink">
                                     <button id="doubleDropdownButton" data-dropdown-toggle="detailProfileMenu"
                                         data-dropdown-placement="right-start" type="button"
@@ -354,7 +356,7 @@
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blogs</a>
                                 </li>
-                                
+
 
                             </ul>
 
@@ -515,12 +517,97 @@
             </div>
         </div>
     </footer>
+
     {{-- end footer --}}
+
+    <div wire:ignore class="fixed end-6 bottom-6 group z-50">
+        <!-- Tombol Play -->
+        <button id="btn_play"
+            class="flex items-center justify-center text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800 cursor-pointer">
+            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 18V6l8 6-8 6Z" />
+            </svg>
+        </button>
+
+        <!-- Tombol Pause -->
+        <button id="btn_pause"
+            class="hidden flex items-center justify-center text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800 cursor-pointer">
+            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 6H8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Zm7 0h-1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Z" />
+            </svg>
+        </button>
+    </div>
+
+    <audio id="audio" src="{{ asset('audio/Langkah_Juara.mp3') }}" hidden></audio>
+
+
     <!-- Script toggle -->
     @livewireScripts
     @vite('resources/js/app.js')
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script>
+        function initAudioControls() {
+            const audio = document.getElementById('audio');
+            const playBtn = document.getElementById('btn_play');
+            const pauseBtn = document.getElementById('btn_pause');
+            let hasPlayed = false;
+
+            if (!audio || !playBtn || !pauseBtn) {
+                console.warn('Audio controls not found.');
+                return;
+            }
+
+            console.log('🎧 Audio initialized.');
+
+            // PLAY saat scroll pertama kali
+            window.addEventListener('scroll', function onScroll() {
+                if (!hasPlayed) {
+                    audio.play().then(() => {
+                        playBtn.classList.add('hidden');
+                        pauseBtn.classList.remove('hidden');
+                    }).catch(err => {
+                        console.log('Autoplay diblokir, butuh interaksi user:', err);
+                    });
+                    hasPlayed = true;
+                }
+            }, {
+                once: true
+            });
+
+            // ▶️ Tombol Play
+            playBtn.addEventListener('click', function () {
+                audio.play().then(() => {
+                    playBtn.classList.add('hidden');
+                    pauseBtn.classList.remove('hidden');
+                    console.log('▶️ Audio diputar');
+                }).catch(err => {
+                    console.error('Tidak bisa memutar audio:', err);
+                });
+            });
+
+            // ⏸️ Tombol Pause
+            pauseBtn.addEventListener('click', function () {
+                audio.pause();
+                playBtn.classList.remove('hidden');
+                pauseBtn.classList.add('hidden');
+                console.log('⏸️ Audio dijeda');
+            });
+        }
+
+        // Jalankan pertama kali
+        document.addEventListener('livewire:load', () => {
+            initAudioControls();
+            if (typeof initFlowbite === "function") initFlowbite();
+        });
+
+        // Jalankan ulang setiap navigasi Livewire
+        document.addEventListener('livewire:navigated', () => {
+            initAudioControls();
+            if (typeof initFlowbite === "function") initFlowbite();
+        });
+        
         // Inisialisasi Flowbite pertama kali
         document.addEventListener("DOMContentLoaded", () => {
             if (typeof initFlowbite === "function") {
