@@ -7,7 +7,7 @@
         <!-- Glow 1 -->
         <div class="absolute top-0 left-0 w-72 h-72 
          bg-purple-400/40 dark:bg-purple-600/40 
-         rounded-full filter blur-3xl sm:top-1/2 sm:-translate-y-1/2
+         rounded-full filter blur-3xl sm:top-30
          opacity-70 dark:opacity-60 animate-pulse">
         </div>
 
@@ -22,7 +22,7 @@
         <div class="absolute top-0 left-1/2 w-72 h-72 
          bg-fuchsia-400/30 dark:bg-indigo-400/30 
          rounded-full filter blur-3xl 
-         opacity-60 dark:opacity-50 delay-500 animate-pulse sm:top-1/2 sm:-translate-y-1/2">
+         opacity-60 dark:opacity-50 delay-500 animate-pulse sm:top-30">
         </div>
 
 
@@ -230,7 +230,7 @@
                         hic quaerat dicta.
                     </p>
                     <a href="#"
-                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 mb-2">
                         Learn More
                         <div class="hover:translate-x-1 transition-transform duration-300">
                             <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -248,7 +248,23 @@
 
     {{-- teams --}}
     <section class="bg-white dark:bg-gray-900 overflow-hidden relative">
+        <div class="absolute top-25 left-1/3 w-32 h-32 
+      bg-purple-600/40 dark:bg-blue-500/40 
+      rounded-full blur-3xl opacity-70 animate-pulse"></div>
 
+        <div class="absolute top-40 right-20 w-24 h-24 
+      bg-pink-500/30 dark:bg-purple-500/30 
+      rounded-full blur-2xl opacity-70 animate-pulse delay-200"></div>
+
+        <div class="absolute bottom-20 left-1/3 w-20 h-20 
+      bg-fuchsia-500/30 dark:bg-indigo-500/30 
+      rounded-full blur-2xl opacity-70 animate-pulse delay-500"></div>
+<div class="absolute top-1/2 left-10 w-32 h-32 
+      bg-pink-600/40 dark:bg-purple-500/40 
+      rounded-full blur-3xl opacity-70 animate-pulse"></div>
+        <div class="absolute bottom-10 right-1/4 w-16 h-16 
+      bg-purple-500/20 dark:bg-blue-500/20 
+      rounded-full blur-xl opacity-70 animate-pulse delay-700"></div>
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative">
             <div
                 class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
@@ -623,7 +639,7 @@
     {{-- end teams --}}
 
     {{-- blogs --}}
-    <section class="bg-white dark:bg-gray-900 relative">
+    <section class="bg-white dark:bg-gray-900 relative overflow-hidden ">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 relative">
             <div
                 class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
@@ -800,29 +816,24 @@
                     </div>
                 </article>
             </div>
-            
+
         </div>
-        <div class="flex justify-center">
-                <a href="#"
-                    class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
-                    Show All
-                    <div class="hover:translate-x-1 transition-transform duration-300">
-                        <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </a>
-            </div>
+        
     </section>
     {{-- endblog --}}
-
-    {{-- modal --}}
-
-
-
-
+    <div class="flex justify-center mb-10 animate-fade-in-up delay-300 mt-4">
+            <a href="#"
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+                Show All
+                <div class="hover:translate-x-1 transition-transform duration-300">
+                    <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </a>
+        </div>
     <!-- Main modal -->
     <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
