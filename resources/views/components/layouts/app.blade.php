@@ -559,16 +559,16 @@
                 return;
             }
 
-            console.log('🎧 Audio initialized.');
+            console.log('🎧 Audio controls initialized');
 
-            // PLAY saat scroll pertama kali
+            // ✅ Play saat scroll pertama kali
             window.addEventListener('scroll', function onScroll() {
                 if (!hasPlayed) {
                     audio.play().then(() => {
                         playBtn.classList.add('hidden');
                         pauseBtn.classList.remove('hidden');
                     }).catch(err => {
-                        console.log('Autoplay diblokir, butuh interaksi user:', err);
+                        console.log('Autoplay diblokir, perlu interaksi user:', err);
                     });
                     hasPlayed = true;
                 }
@@ -576,38 +576,49 @@
                 once: true
             });
 
-            // ▶️ Tombol Play
+            // ▶️ Klik tombol Play
             playBtn.addEventListener('click', function () {
                 audio.play().then(() => {
                     playBtn.classList.add('hidden');
                     pauseBtn.classList.remove('hidden');
-                    console.log('▶️ Audio diputar');
-                }).catch(err => {
-                    console.error('Tidak bisa memutar audio:', err);
-                });
+                }).catch(err => console.error('Tidak bisa play:', err));
             });
 
-            // ⏸️ Tombol Pause
+            // ⏸️ Klik tombol Pause
             pauseBtn.addEventListener('click', function () {
                 audio.pause();
                 playBtn.classList.remove('hidden');
                 pauseBtn.classList.add('hidden');
-                console.log('⏸️ Audio dijeda');
+            });
+
+            // 🔁 Saat lagu selesai (ended)
+            audio.addEventListener('ended', function () {
+                console.log('🎵 Lagu selesai');
+                // Reset ke awal
+                audio.currentTime = 0;
+                // Tampilkan tombol Play lagi
+                playBtn.classList.remove('hidden');
+                pauseBtn.classList.add('hidden');
             });
         }
-
-        // Jalankan pertama kali
+        // when scroll first
+        document.addEventListener('scroll', () => {
+            initAudioControls();
+        })
+        // Jalankan saat Livewire load
         document.addEventListener('livewire:load', () => {
             initAudioControls();
             if (typeof initFlowbite === "function") initFlowbite();
         });
 
-        // Jalankan ulang setiap navigasi Livewire
+        // Jalankan ulang setelah navigasi Livewire
         document.addEventListener('livewire:navigated', () => {
             initAudioControls();
             if (typeof initFlowbite === "function") initFlowbite();
         });
-        
+
+        // end audio
+
         // Inisialisasi Flowbite pertama kali
         document.addEventListener("DOMContentLoaded", () => {
             if (typeof initFlowbite === "function") {
