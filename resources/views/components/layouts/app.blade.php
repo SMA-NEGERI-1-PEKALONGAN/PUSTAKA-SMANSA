@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-
+        {{ $title }} | {{ config('app.name') }}
     </title>
     @vite('resources/css/app.css')
 
@@ -582,6 +582,27 @@
 
         // Jalankan lagi setiap navigasi Livewire
         document.addEventListener("livewire:navigated", initScripts);
+
+        function initRevealAnimations() {
+            const reveals = document.querySelectorAll(".reveal");
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("opacity-100", "translate-y-0");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+            reveals.forEach(el => observer.observe(el));
+        }
+
+        // Pertama kali halaman load
+        document.addEventListener("DOMContentLoaded", initRevealAnimations);
+
+        // Setiap kali Livewire navigate selesai
+        document.addEventListener("livewire:navigated", initRevealAnimations);
 
     </script>
 

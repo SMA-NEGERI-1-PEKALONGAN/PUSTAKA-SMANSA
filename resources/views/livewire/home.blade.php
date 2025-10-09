@@ -1,26 +1,28 @@
 <div>
+
     {{-- hero section --}}
     <section class="relative bg-white dark:bg-gray-900 overflow-hidden">
+
         <!-- Glow / Node efek background -->
         <!-- Glow 1 -->
         <div class="absolute top-0 left-0 w-72 h-72 
          bg-purple-400/40 dark:bg-purple-600/40 
-         rounded-full mix-blend-multiply filter blur-3xl 
-         opacity-70 dark:opacity-60">
+         rounded-full filter blur-3xl sm:top-1/2 sm:-translate-y-1/2
+         opacity-70 dark:opacity-60 animate-pulse">
         </div>
 
         <!-- Glow 2 -->
         <div class="absolute bottom-1/5 right-0 w-60 h-60 
          bg-pink-400/40 dark:bg-blue-500/40 
-         rounded-full mix-blend-multiply filter blur-3xl 
-         opacity-70 dark:opacity-60 delay-200">
+         rounded-full filter blur-3xl 
+         opacity-70 dark:opacity-60 delay-200 animate-pulse">
         </div>
 
         <!-- Glow 3 -->
         <div class="absolute top-0 left-1/2 w-72 h-72 
          bg-fuchsia-400/30 dark:bg-indigo-400/30 
-         rounded-full mix-blend-multiply filter blur-3xl 
-         opacity-60 dark:opacity-50 delay-500">
+         rounded-full filter blur-3xl 
+         opacity-60 dark:opacity-50 delay-500 animate-pulse sm:top-1/2 sm:-translate-y-1/2">
         </div>
 
 
@@ -106,11 +108,11 @@
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
 
             <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center animate-fade-in-up">
                     <dt class="mb-2 text-3xl md:text-4xl font-extrabold">10K+</dt>
                     <dd class="font-light text-gray-500 dark:text-gray-400">Books</dd>
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center animate-fade-in-up">
                     <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
                         1K+
                     </dt>
@@ -118,7 +120,7 @@
                         Users
                     </dd>
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center animate-fade-in-up">
                     <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
                         25K+
                     </dt>
@@ -135,104 +137,128 @@
 
     {{-- features --}}
     <section class="relative bg-white dark:bg-gray-900 overflow-hidden">
-
         <!-- Glow Bulatan Kecil -->
-        <div class="absolute top-10 left-10 w-32 h-32 
-              bg-purple-400/30 dark:bg-blue-400/30 
-              rounded-full blur-3xl opacity-40 animate-pulse">
-        </div>
+        <div class="absolute top-25 left-10 w-32 h-32 
+      bg-purple-500/40 dark:bg-blue-500/40 
+      rounded-full blur-3xl opacity-70 animate-pulse"></div>
 
         <div class="absolute top-40 right-20 w-24 h-24 
-              bg-pink-400/30 dark:bg-purple-500/30 
-              rounded-full blur-2xl opacity-30 animate-pulse delay-200">
-        </div>
+      bg-pink-500/30 dark:bg-purple-500/30 
+      rounded-full blur-2xl opacity-70 animate-pulse delay-200"></div>
 
         <div class="absolute bottom-20 left-1/3 w-20 h-20 
-              bg-fuchsia-400/30 dark:bg-indigo-400/30 
-              rounded-full blur-2xl opacity-30 animate-pulse delay-500">
-        </div>
+      bg-fuchsia-500/30 dark:bg-indigo-500/30 
+      rounded-full blur-2xl opacity-70 animate-pulse delay-500"></div>
 
         <div class="absolute bottom-10 right-1/4 w-16 h-16 
-              bg-purple-300/20 dark:bg-blue-500/20 
-              rounded-full blur-xl opacity-25 animate-pulse delay-700">
-        </div>
+      bg-purple-500/20 dark:bg-blue-500/20 
+      rounded-full blur-xl opacity-70 animate-pulse delay-700"></div>
 
-
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-            <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Feature list</h2>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative z-10">
+            <div
+                class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Feature list
+                </h2>
                 <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
                     We use an agile approach to test assumptions and connect with the needs of your audience early and
                     often.
                 </p>
             </div>
+
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 justify-center">
-                <div class="text-center text-gray-500 dark:text-gray-400">
-                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400  opacity-0 translate-y-10 transition-all duration-700 reveal delay-[100ms]">
+                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
                         </path>
                     </svg>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">
-                            Request A Book
-                        </a>
-                    </h3>
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Request A Book</h3>
                     <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque numquam, velit nemo suscipit
-                        quas hic quaerat dicta itaque quibusdam distinctio.</p>
-
-                </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
-                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                        </path>
-                    </svg>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">
-                            Book List
-                        </a>
-                    </h3>
-                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque numquam, velit nemo suscipit
-                        quas hic quaerat dicta itaque quibusdam distinctio.</p>
-                </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
-                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                        </path>
-                    </svg>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">
-                            Book List
-                        </a>
-                    </h3>
-                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque numquam, velit nemo suscipit
-                        quas hic quaerat dicta itaque quibusdam distinctio.</p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit quas
+                        hic quaerat dicta.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+                        Learn More
+                        <div class="hover:translate-x-1 transition-transform duration-300">
+                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[200ms]">
+                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                        </path>
+                    </svg>
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Book List</h3>
+                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit quas
+                        hic quaerat dicta.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+                        Learn More
+                        <div class="hover:translate-x-1 transition-transform duration-300">
+                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
+                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                        </path>
+                    </svg>
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Digital Access</h3>
+                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit quas
+                        hic quaerat dicta.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+                        Learn More
+                        <div class="hover:translate-x-1 transition-transform duration-300">
+                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     {{-- end teams --}}
 
     {{-- teams --}}
-    <section class="bg-white dark:bg-gray-900 overflow-hidden">
+    <section class="bg-white dark:bg-gray-900 overflow-hidden relative">
 
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-            <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative">
+            <div
+                class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our team</h2>
                 <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of
                     open-source web components and elements built with the utility classes from Tailwind</p>
             </div>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                         alt="Bonnie Avatar">
@@ -276,7 +302,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
                         alt="Helene Avatar">
@@ -320,7 +347,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                         alt="Jese Avatar">
@@ -364,7 +392,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
                         alt="Joseph Avatar">
@@ -408,7 +437,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
                         alt="Sofia Avatar">
@@ -452,7 +482,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
                         alt="Leslie Avatar">
@@ -496,7 +527,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                         alt="Michael Avatar">
@@ -540,7 +572,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-400">
+                <div
+                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
                         alt="Neil Avatar">
@@ -590,17 +623,18 @@
     {{-- end teams --}}
 
     {{-- blogs --}}
-    <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+    <section class="bg-white dark:bg-gray-900 relative">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 relative">
+            <div
+                class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                 <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our
                     Blog</h2>
                 <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to test
                     assumptions and connect with the needs of your audience early and often.</p>
             </div>
-            <div class="grid gap-8 lg:grid-cols-2">
+            <div class="grid gap-8 lg:grid-cols-2 relative">
                 <article
-                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
                         <span
                             class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
@@ -641,7 +675,90 @@
                     </div>
                 </article>
                 <article
-                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+                                    clip-rule="evenodd"></path>
+                                <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
+                            </svg>
+                            Article
+                        </span>
+                        <span class="text-sm">14 days ago</span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Our
+                            first project with React</a></h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to
+                        bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
+                        both web designers and developers influence both web designers and developers.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <img class="w-7 h-7 rounded-full"
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                                alt="Bonnie Green avatar" />
+                            <span class="font-medium dark:text-white">
+                                Bonnie Green
+                            </span>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center font-medium text-dark-600 dark:text-white hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z">
+                                </path>
+                            </svg>
+                            Tutorial
+                        </span>
+                        <span class="text-sm">14 days ago</span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">How to
+                            quickly deploy a static website</a></h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to
+                        bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
+                        both web designers and developers influence both web designers and developers.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <img class="w-7 h-7 rounded-full"
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                                alt="Jese Leos avatar" />
+                            <span class="font-medium dark:text-white">
+                                Jese Leos
+                            </span>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center font-medium text-dark-600 dark:text-white hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
                         <span
                             class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
@@ -683,7 +800,21 @@
                     </div>
                 </article>
             </div>
+            
         </div>
+        <div class="flex justify-center">
+                <a href="#"
+                    class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+                    Show All
+                    <div class="hover:translate-x-1 transition-transform duration-300">
+                        <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
     </section>
     {{-- endblog --}}
 

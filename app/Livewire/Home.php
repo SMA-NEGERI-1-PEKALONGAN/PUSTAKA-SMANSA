@@ -8,6 +8,8 @@ class Home extends Component
 {
     public function render()
     {
-        return view('livewire.home');
+        $data['main_menu'] = "Home";
+        $data['sub_menu'] = "";
+        return view('livewire.home', $data)->layout('components.layouts.app', ['title' => 'Home']);
     }
 }
