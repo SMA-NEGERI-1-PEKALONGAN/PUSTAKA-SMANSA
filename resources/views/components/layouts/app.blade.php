@@ -9,6 +9,10 @@
     <title>
         {{ $title }} | {{ config('app.name') }}
     </title>
+    {{-- image icon --}}
+    <link rel="icon" href="{{ asset('LOGO SMANSA.png') }}" sizes="any" width="32" height="32">
+    <link rel="icon" href="{{ asset('LOGO SMANSA.png') }}" type="image/svg+xml" width="32" height="32">
+    <link rel="apple-touch-icon" href="{{ asset('LOGO SMANSA.png') }}" width="180" height="180">
     @vite('resources/css/app.css')
 
     <!-- Animations -->
@@ -561,8 +565,9 @@
 
             console.log('🎧 Audio controls initialized');
 
-            // ✅ Play saat scroll pertama kali
-            window.addEventListener('scroll', function onScroll() {
+            // ▶️ Klik tombol Play
+            playBtn.addEventListener('click', function () {
+                // ✅ Play saat scroll pertama kali
                 if (!hasPlayed) {
                     audio.play().then(() => {
                         playBtn.classList.add('hidden');
@@ -572,16 +577,15 @@
                     });
                     hasPlayed = true;
                 }
-            }, {
-                once: true
-            });
-
-            // ▶️ Klik tombol Play
-            playBtn.addEventListener('click', function () {
-                audio.play().then(() => {
-                    playBtn.classList.add('hidden');
-                    pauseBtn.classList.remove('hidden');
-                }).catch(err => console.error('Tidak bisa play:', err));
+                // ✅ Play saat tombol Play ditekan
+                else {
+                    audio.play().then(() => {
+                        playBtn.classList.add('hidden');
+                        pauseBtn.classList.remove('hidden');
+                    }).catch(err => {
+                        console.log('Autoplay diblokir, perlu interaksi user:', err);
+                    });
+                }
             });
 
             // ⏸️ Klik tombol Pause
@@ -601,9 +605,30 @@
                 pauseBtn.classList.add('hidden');
             });
         }
-        // when scroll first
-        document.addEventListener('scroll', () => {
-            initAudioControls();
+        // when load the page
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('audio');
+            const playBtn = document.getElementById('btn_play');
+            const pauseBtn = document.getElementById('btn_pause');
+            let hasPlayed = false;
+
+            if (!audio || !playBtn || !pauseBtn) {
+                console.warn('Audio controls not found.');
+                return;
+            }
+            // window.addEventListener('scroll', function onScroll() {
+            //     if (!hasPlayed) {
+            //         audio.play().then(() => {
+            //             playBtn.classList.add('hidden');
+            //             pauseBtn.classList.remove('hidden');
+            //         }).catch(err => {
+            //             console.log('Autoplay diblokir, perlu interaksi user:', err);
+            //         });
+            //         hasPlayed = true;
+            //     }
+            // }, {
+            //     once: true
+            // });
         })
         // Jalankan saat Livewire load
         document.addEventListener('livewire:load', () => {

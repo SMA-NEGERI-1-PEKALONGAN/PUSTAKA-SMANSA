@@ -5,24 +5,18 @@
 
         <!-- Glow / Node efek background -->
         <!-- Glow 1 -->
-        <div class="absolute top-0 left-0 w-72 h-72 
-         bg-purple-400/40 dark:bg-purple-600/40 
-         rounded-full filter blur-3xl sm:top-30
-         opacity-70 dark:opacity-60 animate-pulse">
+        <div
+            class="absolute top-0 left-0 w-72 h-72 bg-purple-400/40 dark:bg-purple-600/40 rounded-full filter blur-3xl sm:top-30 opacity-70 dark:opacity-60 animate-pulse">
         </div>
 
         <!-- Glow 2 -->
-        <div class="absolute bottom-1/5 right-0 w-60 h-60 
-         bg-pink-400/40 dark:bg-blue-500/40 
-         rounded-full filter blur-3xl 
-         opacity-70 dark:opacity-60 delay-200 animate-pulse">
+        <div
+            class="absolute bottom-1/5 right-0 w-60 h-60 bg-pink-400/40 dark:bg-blue-500/40 rounded-full filter blur-3xl opacity-70 dark:opacity-60 delay-200 animate-pulse">
         </div>
 
         <!-- Glow 3 -->
-        <div class="absolute top-0 left-1/2 w-72 h-72 
-         bg-fuchsia-400/30 dark:bg-indigo-400/30 
-         rounded-full filter blur-3xl 
-         opacity-60 dark:opacity-50 delay-500 animate-pulse sm:top-30">
+        <div
+            class="absolute top-0 left-1/2 w-72 h-72 bg-fuchsia-400/30 dark:bg-indigo-400/30 rounded-full filter blur-3xl opacity-60 dark:opacity-50 delay-500 animate-pulse sm:top-30">
         </div>
 
 
@@ -52,13 +46,8 @@
                 <!-- Tambah style animasi -->
 
 
-                <h1 class="relative z-10 max-w-3xl mx-auto mb-6 text-center 
-         text-4xl md:text-5xl xl:text-6xl 
-         font-extrabold tracking-tight leading-tight 
-         bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 
-         dark:from-purple-300 dark:via-blue-400 dark:to-cyan-400 
-         bg-clip-text text-transparent 
-         animate-fade-in-down">
+                <h1
+                    class="relative z-10 max-w-3xl mx-auto mb-6 text-center text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-purple-300 dark:via-blue-400 dark:to-cyan-400 bg-clip-text text-transparent animate-fade-in-down">
 
                     Welcome to
                     <span id="typing-text" class="block mt-2 text-transparent bg-clip-text 
@@ -138,25 +127,25 @@
     {{-- features --}}
     <section class="relative bg-white dark:bg-gray-900 overflow-hidden">
         <!-- Glow Bulatan Kecil -->
-        <div class="absolute top-25 left-10 w-32 h-32 
-      bg-purple-500/40 dark:bg-blue-500/40 
-      rounded-full blur-3xl opacity-70 animate-pulse"></div>
+        <div
+            class="absolute top-25 left-10 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+        </div>
 
-        <div class="absolute top-40 right-20 w-24 h-24 
-      bg-pink-500/30 dark:bg-purple-500/30 
-      rounded-full blur-2xl opacity-70 animate-pulse delay-200"></div>
+        <div
+            class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-200">
+        </div>
 
-        <div class="absolute bottom-20 left-1/3 w-20 h-20 
-      bg-fuchsia-500/30 dark:bg-indigo-500/30 
-      rounded-full blur-2xl opacity-70 animate-pulse delay-500"></div>
+        <div
+            class="absolute bottom-20 left-1/3 w-20 h-20 bg-fuchsia-500/30 dark:bg-indigo-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-500">
+        </div>
 
-        <div class="absolute bottom-10 right-1/4 w-16 h-16 
-      bg-purple-500/20 dark:bg-blue-500/20 
-      rounded-full blur-xl opacity-70 animate-pulse delay-700"></div>
+        <div
+            class="absolute bottom-10 right-1/4 w-16 h-16 bg-purple-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-70 animate-pulse delay-700">
+        </div>
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative z-10">
             <div
-                class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal">
+                class=" mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Feature list
                 </h2>
@@ -166,81 +155,128 @@
                 </p>
             </div>
 
-            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 justify-center">
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400  opacity-0 translate-y-10 transition-all duration-700 reveal delay-[100ms]">
-                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                        </path>
-                    </svg>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Request A Book</h3>
-                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit quas
-                        hic quaerat dicta.
-                    </p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
-                        Learn More
-                        <div class="hover:translate-x-1 transition-transform duration-300">
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 justify-center mb-5">
+               
+                <a href="#" class="group relative block bg-white/80 dark:bg-gray-800/70 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-md backdrop-blur-sm hover:backdrop-blur-lg hover:bg-white/60 dark:hover:bg-gray-700/60 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] dark:hover:shadow-[0_0_40px_rgba(99,102,241,0.35)] p-6 text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[100ms] hover:scale-102  cursor-pointer overflow-hidden">
 
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[200ms]">
-                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                        </path>
-                    </svg>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Book List</h3>
-                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit quas
-                        hic quaerat dicta.
-                    </p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
-                        Learn More
-                        <div class="hover:translate-x-1 transition-transform duration-300">
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+                    <!-- Glow Layer -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-700"></div>
 
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <svg class="mx-auto mb-4 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                        </path>
-                    </svg>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Digital Access</h3>
-                    <p class="mb-4 font-light text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit quas
-                        hic quaerat dicta.
-                    </p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 mb-2">
-                        Learn More
-                        <div class="hover:translate-x-1 transition-transform duration-300">
-                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <!-- Content Wrapper -->
+                    <div class="relative z-10">
+                        <!-- Icon -->
+                        <svg class="mx-auto mb-4 w-12 h-12 text-purple-500 dark:text-purple-400 transition-transform duration-500 group-hover:rotate-6"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                            </path>
+                        </svg>
+
+                        <!-- Title -->
+                        <h3
+                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                            Request A Book
+                        </h3>
+
+                        <!-- Description -->
+                        <p
+                            class="mb-5 font-light text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit
+                            quas hic quaerat dicta.
+                        </p>
+
+                        <!-- Button -->
+                        <span class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] transition-all duration-300">
+                            Learn More
+                            <svg class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                        </div>
-                    </a>
-                </div>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="group relative block bg-white/80 dark:bg-gray-800/70 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-md backdrop-blur-sm hover:backdrop-blur-lg hover:bg-white/60 dark:hover:bg-gray-700/60 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] dark:hover:shadow-[0_0_40px_rgba(99,102,241,0.35)] p-6 text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[100ms] hover:scale-102  cursor-pointer overflow-hidden">
+
+                    <!-- Glow Layer -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-700"></div>
+
+                    <!-- Content Wrapper -->
+                    <div class="relative z-10">
+                        <!-- Icon -->
+                        <svg class="mx-auto mb-4 w-12 h-12 text-purple-500 dark:text-purple-400 transition-transform duration-500 group-hover:rotate-6"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                            </path>
+                        </svg>
+
+                        <!-- Title -->
+                        <h3
+                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                            Request A Book
+                        </h3>
+
+                        <!-- Description -->
+                        <p
+                            class="mb-5 font-light text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit
+                            quas hic quaerat dicta.
+                        </p>
+
+                        <!-- Button -->
+                        <span class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] transition-all duration-300">
+                            Learn More
+                            <svg class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="group relative block bg-white/80 dark:bg-gray-800/70 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-md backdrop-blur-sm hover:backdrop-blur-lg hover:bg-white/60 dark:hover:bg-gray-700/60 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] dark:hover:shadow-[0_0_40px_rgba(99,102,241,0.35)] p-6 text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[100ms] hover:scale-102  cursor-pointer overflow-hidden">
+
+                    <!-- Glow Layer -->
+                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 blur-2xl transition-all duration-700"></div>
+
+                    <!-- Content Wrapper -->
+                    <div class="relative z-10">
+                        <!-- Icon -->
+                        <svg class="mx-auto mb-4 w-12 h-12 text-purple-500 dark:text-purple-400 transition-transform duration-500 group-hover:rotate-6"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                            </path>
+                        </svg>
+
+                        <!-- Title -->
+                        <h3
+                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                            Request A Book
+                        </h3>
+
+                        <!-- Description -->
+                        <p
+                            class="mb-5 font-light text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam velit nemo suscipit
+                            quas hic quaerat dicta.
+                        </p>
+
+                        <!-- Button -->
+                        <span class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] transition-all duration-300">
+                            Learn More
+                            <svg class="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -259,13 +295,14 @@
         <div class="absolute bottom-20 left-1/3 w-20 h-20 
       bg-fuchsia-500/30 dark:bg-indigo-500/30 
       rounded-full blur-2xl opacity-70 animate-pulse delay-500"></div>
-<div class="absolute top-1/2 left-10 w-32 h-32 
+        <div class="absolute top-1/2 left-10 w-32 h-32 
       bg-pink-600/40 dark:bg-purple-500/40 
       rounded-full blur-3xl opacity-70 animate-pulse"></div>
         <div class="absolute bottom-10 right-1/4 w-16 h-16 
       bg-purple-500/20 dark:bg-blue-500/20 
-      rounded-full blur-xl opacity-70 animate-pulse delay-700"></div>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative">
+      rounded-full blur-xl opacity-70 animate-pulse delay-700">
+        </div>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative mb-5">
             <div
                 class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our team</h2>
@@ -648,7 +685,7 @@
                 <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to test
                     assumptions and connect with the needs of your audience early and often.</p>
             </div>
-            <div class="grid gap-8 lg:grid-cols-2 relative">
+            <div class="grid gap-8 lg:grid-cols-2 relative mb-4">
                 <article
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
@@ -818,22 +855,22 @@
             </div>
 
         </div>
-        
+
     </section>
     {{-- endblog --}}
-    <div class="flex justify-center mb-10 animate-fade-in-up delay-300 mt-4">
-            <a href="#"
-                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
-                Show All
-                <div class="hover:translate-x-1 transition-transform duration-300">
-                    <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-            </a>
-        </div>
+    <div class=" relative flex justify-center mb-10 animate-fade-in-up delay-300 mt-4">
+        <a href="#"
+            class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+            Show All
+            <div class="hover:translate-x-1 transition-transform duration-300">
+                <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </a>
+    </div>
     <!-- Main modal -->
     <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
