@@ -173,9 +173,7 @@
                 </button>
 
                 <!-- Hamburger -->
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg 
-        md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 
-        dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky"
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200  dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky"
                     aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -187,16 +185,14 @@
 
             <!-- Menu -->
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg 
-        backdrop-blur-md md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
-        md:bg-transparent  md:dark:bg-transparent dark:border-gray-700">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-200 rounded-lg  backdrop-blur-md md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent  md:dark:bg-transparent dark:border-gray-700">
                     <li><a wire:navigate href="{{ route('Home') }}"
                             class="block py-2 px-3 md:p-0 active-menus text-blue-600  dark:text-purple-400">Home</a>
                     </li>
 
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="profileMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">About
+                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">About
                             Us
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
@@ -210,27 +206,27 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sambutan
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sambutan
                                         Kepsek</a>
                                 </li>
 
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Visi
                                         & Misi</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah</a>
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Akreditasi</a>
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Akreditasi</a>
                                 </li>
                                 {{-- <li aria-labelledby="dropdownNavbarLink">
                                     <button id="doubleDropdownButton" data-dropdown-toggle="detailProfileMenu"
                                         data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About
+                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">About
                                         Us<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -242,16 +238,16 @@
                                             aria-labelledby="doubleDropdownButton">
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
                                                     downloads</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -263,7 +259,7 @@
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="layananMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Services
+                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Services
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -276,14 +272,14 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sirkulasi</a>
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sirkulasi</a>
                                 </li>
 
 
                                 {{-- <li aria-labelledby="dropdownNavbarLink">
                                     <button id="doubleDropdownButton" data-dropdown-toggle="detailProfileMenu"
                                         data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About
+                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">About
                                         Us<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -295,16 +291,16 @@
                                             aria-labelledby="doubleDropdownButton">
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
                                                     downloads</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -322,7 +318,7 @@
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="inovasiMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Innovation
+                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Innovation
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -335,7 +331,7 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                                 </li>
 
 
@@ -345,7 +341,7 @@
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="eResourceMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">E-Resources
+                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">E-Resources
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -358,7 +354,7 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blogs</a>
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Blogs</a>
                                 </li>
 
 
@@ -368,7 +364,7 @@
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="prestasiMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Achievements
+                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Achievements
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -381,12 +377,12 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                                 </li>
                                 <li aria-labelledby="dropdownNavbarLink">
                                     <button id="doubleDropdownButton" data-dropdown-toggle="detaileResourceMenu"
                                         data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile<svg
+                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Profile<svg
                                             class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -398,16 +394,16 @@
                                             aria-labelledby="doubleDropdownButton">
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
                                                     downloads</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
                                             </li>
                                         </ul>
                                     </div>
