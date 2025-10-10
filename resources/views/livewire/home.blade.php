@@ -50,9 +50,7 @@
                     class="relative z-10 max-w-3xl mx-auto mb-6 text-center text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-purple-300 dark:via-blue-400 dark:to-cyan-400 bg-clip-text text-transparent animate-fade-in-down">
 
                     Welcome to
-                    <span id="typing-text" class="block mt-2 text-transparent bg-clip-text 
-               bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
-               dark:from-fuchsia-400 dark:via-purple-400 dark:to-blue-400">
+                    <span id="typing-text" class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-fuchsia-400 dark:via-purple-400 dark:to-blue-400">
                     </span>
                 </h1>
 
@@ -125,7 +123,7 @@
     {{-- end hero section --}}
 
     {{-- features --}}
-    <section class="relative bg-white dark:bg-gray-900 overflow-hidden">
+    <section class="relative bg-white dark:bg-gray-900 ">
         <!-- Glow Bulatan Kecil -->
         <div
             class="absolute top-25 left-10 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
@@ -677,6 +675,29 @@
 
     {{-- blogs --}}
     <section class="bg-white dark:bg-gray-900 relative overflow-hidden ">
+          <!-- Glow Bulatan Kecil -->
+        <div
+            class="absolute top-50 left-10 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-50 animate-pulse">
+        </div>
+        <div
+            class="absolute top-20 left-1/3 w-42 h-42 bg-fuchsia-500/40 dark:bg-indigo-500/40 rounded-full blur-3xl opacity-50 animate-pulse">
+        </div>
+
+        <div
+            class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-50 animate-pulse delay-200">
+        </div>
+
+        <div
+            class="absolute top-1/2 right-1/2 left-1/2 w-62 h-62 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-50 animate-pulse delay-200">
+        </div>
+
+        <div
+            class="absolute bottom-10 left-10 w-30 h-30 bg-fuchsia-500/30 dark:bg-indigo-500/30 rounded-full blur-2xl opacity-50 animate-pulse delay-500">
+        </div>
+
+        <div
+            class="absolute bottom-10 right-0 w-42 h-42 bg-purple-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-50 animate-pulse delay-700">
+        </div>
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 relative">
             <div
                 class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
@@ -858,6 +879,7 @@
 
     </section>
     {{-- endblog --}}
+
     <div class=" relative flex justify-center mb-10 animate-fade-in-up delay-300 mt-4">
         <a href="#"
             class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
