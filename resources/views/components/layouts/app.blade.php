@@ -565,7 +565,7 @@
         </button>
     </div>
 
-    <audio id="audio" src="{{ asset('audio/Langkah_Juara.mp3') }}" hidden></audio>
+    <audio id="audio" src="{{ asset('audio/Langkah_Juara.mp3') }}" hidden type="audio/mpeg" preload="auto"></audio>
 
 
     <!-- Script toggle -->
@@ -637,7 +637,21 @@
                 console.warn('Audio controls not found.');
                 return;
             }
-            window.addEventListener('scroll', function onScroll() {
+            // window.addEventListener('scroll', function onScroll() {
+            //     if (!hasPlayed) {
+            //         audio.play().then(() => {
+            //             playBtn.classList.add('hidden');
+            //             pauseBtn.classList.remove('hidden');
+            //         }).catch(err => {
+            //             console.log('Autoplay diblokir, perlu interaksi user:', err);
+            //         });
+            //         hasPlayed = true;
+            //     }
+            // }, {
+            //     once: true
+            // });
+            // run audio when 10second
+            setTimeout(() => {
                 if (!hasPlayed) {
                     audio.play().then(() => {
                         playBtn.classList.add('hidden');
@@ -647,9 +661,7 @@
                     });
                     hasPlayed = true;
                 }
-            }, {
-                once: true
-            });
+            }, 5000);
         })
         // Jalankan saat Livewire load
         document.addEventListener('livewire:load', () => {

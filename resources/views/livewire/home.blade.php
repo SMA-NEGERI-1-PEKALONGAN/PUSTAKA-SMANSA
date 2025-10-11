@@ -453,7 +453,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-20 ">
                 <!-- Item 1 -->
                 <div
-                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-700 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
                     <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Kegiatan 1">
                     <div
@@ -466,7 +466,7 @@
                 </div>
                 <!-- Item 2 -->
                 <div
-                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-700 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
                     <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Kegiatan 2">
                     <div
@@ -479,7 +479,7 @@
                 </div>
                 <!-- Item 3 -->
                 <div
-                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-700 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
                     <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="Kegiatan 3">
                     <div
@@ -492,7 +492,7 @@
                 </div>
                 <!-- Item 4 -->
                 <div
-                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-700 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
                     <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="Kegiatan 4">
                     <div
@@ -729,7 +729,7 @@
 
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="relative h-76 overflow-hidden rounded-lg auto my-20 md:mt-20">
+                <div class="relative h-76 overflow-hidden rounded-lg auto my-20 md:mt-20 opacity-0 transition-all duration-700 reveal">
                     <!-- Item 1 -->
                     <div class="hidden duration-1000 ease-in-out px-2 " data-carousel-item>
                         <figure
