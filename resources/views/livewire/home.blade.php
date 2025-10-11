@@ -110,11 +110,11 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
             <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
-                <div class="flex flex-col items-center justify-center animate-fade-in-up">
+                <div class="flex flex-col items-center justify-center animate-fade-in-up opacity-0 transition-all duration-700 reveal">
                     <dt class="mb-2 text-3xl md:text-4xl font-extrabold">10K+</dt>
                     <dd class="font-light text-gray-500 dark:text-gray-400">Books</dd>
                 </div>
-                <div class="flex flex-col items-center justify-center animate-fade-in-up">
+                <div class="flex flex-col items-center justify-center animate-fade-in-up opacity-0 transition-all duration-700 reveal">
                     <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
                         1K+
                     </dt>
@@ -122,7 +122,7 @@
                         Users
                     </dd>
                 </div>
-                <div class="flex flex-col items-center justify-center animate-fade-in-up">
+                <div class="flex flex-col items-center justify-center animate-fade-in-up opacity-0 transition-all duration-700 reveal">
                     <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
                         25K+
                     </dt>
@@ -138,13 +138,22 @@
 
 
     <section class="bg-white dark:bg-gray-900 overflow-hidden relative">
-        <div class="absolute top-25 left-1/3 w-32 h-32 bg-purple-600/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse"></div>
+        <div
+            class="absolute top-25 left-1/3 w-32 h-32 bg-purple-600/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+        </div>
 
-        <div class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-200"></div>
+        <div
+            class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-200">
+        </div>
 
-        <div class="absolute bottom-20 left-1/3 w-20 h-20 bg-fuchsia-500/30 dark:bg-indigo-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-500"></div>
-        <div class="absolute top-1/2 left-10 w-32 h-32 bg-pink-600/40 dark:bg-purple-500/40 rounded-full blur-3xl opacity-70 animate-pulse"></div>
-        <div class="absolute bottom-10 right-1/4 w-16 h-16 bg-purple-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-70 animate-pulse delay-700">
+        <div
+            class="absolute bottom-20 left-1/3 w-20 h-20 bg-fuchsia-500/30 dark:bg-indigo-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-500">
+        </div>
+        <div
+            class="absolute top-1/2 left-10 w-32 h-32 bg-pink-600/40 dark:bg-purple-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+        </div>
+        <div
+            class="absolute bottom-10 right-1/4 w-16 h-16 bg-purple-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-70 animate-pulse delay-700">
         </div>
         <div class="py-16 px-4 mx-auto max-w-6xl text-center z-10">
             <!-- Tabs Header -->
@@ -186,12 +195,9 @@
                         <div class="flex justify-center">
                             <div
                                 class="sm:filter sm:grayscale sm:hover:grayscale-0 max-w-sm transition-all duration-300 cursor-pointer relative group w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-transparent bg-gradient-to-tr from-indigo-500 to-purple-500 p-1  ">
-                                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
-                                    alt="Kepala Sekolah"
+                                <img src="{{ asset('img/foto_kepsek.jpg') }}" alt="Kepala Sekolah"
                                     class="rounded-full object-cover w-full h-full border-4 border-white dark:border-gray-800">
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full">
-                                </div>
+
                             </div>
                         </div>
 
@@ -415,398 +421,103 @@
     </section>
     {{-- end features --}}
 
-    {{-- teams --}}
+    {{-- gallery --}}
     <section class="bg-white dark:bg-gray-900 overflow-hidden relative">
-        <div class="absolute top-25 left-1/3 w-32 h-32 
-      bg-purple-600/40 dark:bg-blue-500/40 
-      rounded-full blur-3xl opacity-70 animate-pulse"></div>
+        <div
+            class="absolute top-25 left-1/3 w-32 h-32 bg-purple-600/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+        </div>
 
-        <div class="absolute top-40 right-20 w-24 h-24 
-      bg-pink-500/30 dark:bg-purple-500/30 
-      rounded-full blur-2xl opacity-70 animate-pulse delay-200"></div>
+        <div
+            class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-200">
+        </div>
 
-        <div class="absolute bottom-20 left-1/3 w-20 h-20 
-      bg-fuchsia-500/30 dark:bg-indigo-500/30 
-      rounded-full blur-2xl opacity-70 animate-pulse delay-500"></div>
-        <div class="absolute top-1/2 left-10 w-32 h-32 
-      bg-pink-600/40 dark:bg-purple-500/40 
-      rounded-full blur-3xl opacity-70 animate-pulse"></div>
-        <div class="absolute bottom-10 right-1/4 w-16 h-16 
-      bg-purple-500/20 dark:bg-blue-500/20 
-      rounded-full blur-xl opacity-70 animate-pulse delay-700">
+        <div
+            class="absolute bottom-20 left-1/3 w-20 h-20 bg-fuchsia-500/30 dark:bg-indigo-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-500">
+        </div>
+        <div
+            class="absolute top-1/2 left-10 w-32 h-32 bg-pink-600/40 dark:bg-purple-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+        </div>
+        <div
+            class="absolute bottom-10 right-1/4 w-16 h-16 bg-purple-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-70 animate-pulse delay-700">
         </div>
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative mb-5">
             <div
                 class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our team</h2>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Gallery</h2>
                 <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of
                     open-source web components and elements built with the utility classes from Tailwind</p>
             </div>
-            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-20 ">
+                <!-- Item 1 -->
                 <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                        alt="Bonnie Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Bonnie Green</a>
-                    </h3>
-                    <p>CEO/Co-founder</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Kegiatan 1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center md:flex hidden">
+                        <div class="text-center mb-4">
+                            <span class="block text-white text-base font-semibold">Kegiatan Prakarya</span>
+                            <p class="text-gray-200 text-sm">Melatih kreativitas siswa</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Item 2 -->
                 <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
-                        alt="Helene Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Helene Engels</a>
-                    </h3>
-                    <p>CTO/Co-founder</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Kegiatan 2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center md:flex hidden">
+                        <div class="text-center mb-4">
+                            <span class="block text-white text-base font-semibold">Kegiatan Prakarya</span>
+                            <p class="text-gray-200 text-sm">Melatih kreativitas siswa</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Item 3 -->
                 <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                        alt="Jese Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Jese Leos</a>
-                    </h3>
-                    <p>SEO & Marketing</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="Kegiatan 3">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center md:flex hidden">
+                        <div class="text-center mb-4">
+                            <span class="block text-white text-base font-semibold">Kegiatan Prakarya</span>
+                            <p class="text-gray-200 text-sm">Melatih kreativitas siswa</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Item 4 -->
                 <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
-                        alt="Joseph Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Joseph Mcfall</a>
-                    </h3>
-                    <p>Sales</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                        alt="Sofia Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Lana Byrd</a>
-                    </h3>
-                    <p>Web Designer</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
-                        alt="Leslie Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Leslie Livingston</a>
-                    </h3>
-                    <p>Graphic Designer</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                        alt="Michael Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Michael Gough</a>
-                    </h3>
-                    <p>React Developer</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-center text-gray-500 dark:text-gray-400 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
-                        alt="Neil Avatar">
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Neil Sims</a>
-                    </h3>
-                    <p>Vue.js Developer</p>
-                    <ul class="flex justify-center mt-4 space-x-4">
-                        <li>
-                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" /></svg>
-                            </a>
-                        </li>
-                    </ul>
+                    class="relative opacity-0 reveal group overflow-hidden rounded-xl shadow-lg transition-all duration-300 cursor-pointer sm:filter sm:grayscale sm:hover:grayscale-0">
+                    <img class="h-auto w-full object-cover transform group-hover:scale-110 transition-all duration-500"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="Kegiatan 4">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center md:flex hidden">
+                        <div class="text-center mb-4">
+                            <span class="block text-white text-base font-semibold">Kegiatan Prakarya</span>
+                            <p class="text-gray-200 text-sm">Melatih kreativitas siswa</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <a href="#"
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 opacity-0 reveal ">
+                Show All
+                <div class="hover:translate-x-1 transition-transform duration-300">
+                    <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </a>
+
         </div>
     </section>
-    {{-- end teams --}}
+    {{-- end gallery --}}
 
     {{-- blogs --}}
     <section class="bg-white dark:bg-gray-900 relative overflow-hidden ">
@@ -1016,7 +727,7 @@
 
     <div class=" relative flex justify-center mb-10 animate-fade-in-up delay-300 mt-4">
         <a href="#"
-            class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 ">
+            class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg transition-transform duration-300 opacity-0 reveal ">
             Show All
             <div class="hover:translate-x-1 transition-transform duration-300">
                 <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -1047,7 +758,7 @@
 
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="relative h-68 overflow-hidden rounded-lg auto my-20 md:mt-20">
+                <div class="relative h-76 overflow-hidden rounded-lg auto my-20 md:mt-20">
                     <!-- Item 1 -->
                     <div class="hidden duration-1000 ease-in-out px-2 " data-carousel-item>
                         <figure
@@ -1081,9 +792,7 @@
                             </div>
                             <blockquote>
                                 <p class="md:text-2xl font-semibold text-gray-900 dark:text-white text-left text-1xl">
-                                    "Flowbite is just
-                                    awesome. It contains tons of predesigned components and pages starting from login
-                                    screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                                    "Suasana perpustakaan yang nyaman untuk belajar."</p>
                             </blockquote>
                             <figcaption class="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
                                 <img class="w-6 h-6 rounded-full"
@@ -1091,8 +800,8 @@
                                     alt="profile picture">
                                 <div
                                     class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Bonnie Green</cite>
-                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CTO at Flowbite</cite>
+                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Anton</cite>
+                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Siswa</cite>
                                 </div>
                             </figcaption>
                         </figure>
@@ -1130,9 +839,9 @@
                             </div>
                             <blockquote>
                                 <p class="md:text-2xl font-semibold text-gray-900 dark:text-white text-left text-1xl">
-                                    "Flowbite is just
-                                    awesome. It contains tons of predesigned components and pages starting from login
-                                    screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, blanditiis?
+                                    Ducimus sunt atque mollitia perferendis praesentium nobis, iusto dolore dolor
+                                    veritatis, numquam repellat odio in id nemo similique quis? A!."</p>
                             </blockquote>
                             <figcaption class="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
                                 <img class="w-6 h-6 rounded-full"
@@ -1140,8 +849,8 @@
                                     alt="profile picture">
                                 <div
                                     class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Bonnie Green</cite>
-                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CTO at Flowbite</cite>
+                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Arno</cite>
+                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Guru</cite>
                                 </div>
                             </figcaption>
                         </figure>
@@ -1179,9 +888,8 @@
                             </div>
                             <blockquote>
                                 <p class="md:text-2xl font-semibold text-gray-900 dark:text-white text-left text-1xl">
-                                    "Flowbite is just
-                                    awesome. It contains tons of predesigned components and pages starting from login
-                                    screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facere qui voluptates vitae quidem similique? Nesciunt reprehenderit ut facilis at?."
+                                </p>
                             </blockquote>
                             <figcaption class="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
                                 <img class="w-6 h-6 rounded-full"
@@ -1189,8 +897,8 @@
                                     alt="profile picture">
                                 <div
                                     class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Bonnie Green</cite>
-                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CTO at Flowbite</cite>
+                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Alamm</cite>
+                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Tata Usaha</cite>
                                 </div>
                             </figcaption>
                         </figure>
@@ -1228,9 +936,8 @@
                             </div>
                             <blockquote>
                                 <p class="md:text-2xl font-semibold text-gray-900 dark:text-white text-left text-1xl">
-                                    "Flowbite is just
-                                    awesome. It contains tons of predesigned components and pages starting from login
-                                    screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem nisi
+                                    beatae a sint odit sed eius. Ratione atque sunt temporibus.."</p>
                             </blockquote>
                             <figcaption class="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
                                 <img class="w-6 h-6 rounded-full"
@@ -1238,15 +945,15 @@
                                     alt="profile picture">
                                 <div
                                     class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Bonnie Green</cite>
-                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CTO at Flowbite</cite>
+                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Micheal</cite>
+                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Alumni</cite>
                                 </div>
                             </figcaption>
                         </figure>
                     </div>
                 </div>
 
-                <div class="flex justify-center items-center">
+                {{-- <div class="flex justify-center items-center">
                     <button type="button"
                         class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-prev>
@@ -1273,7 +980,7 @@
                             <span class="sr-only">Next</span>
                         </span>
                     </button>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
