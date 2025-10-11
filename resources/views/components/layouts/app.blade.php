@@ -122,10 +122,11 @@
         class="fixed w-full top-0 z-50 transition-all duration-300 border-b border-transparent bg-transparent p-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <!-- Logo -->
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="{{ asset('LOGO SMANSA.png') }}" class="h-8" alt="Flowbite Logo">
-                <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-900 dark:text-gray-200">
-                    PUSTAKA
+            <a wire:navigate href="{{ route('Home') }}" class="flex justify-center items-center space-x-3">
+                <img src="{{ asset('LOGO SMANSA.png') }}" class="h-12 w-12 object-contain drop-shadow-md"
+                    alt="Logo SMANSA">
+                <span class="text-3xl font-extrabold tracking-tight text-gray-800 dark:text-white">
+                    PUSTAKA<span class="text-blue-600">+</span>
                 </span>
             </a>
 
@@ -173,8 +174,9 @@
                 </button>
 
                 <!-- Hamburger -->
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200  dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky"
-                    aria-expanded="false">
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200  dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -185,7 +187,8 @@
 
             <!-- Menu -->
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-200 rounded-lg  backdrop-blur-md md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent  md:dark:bg-transparent dark:border-gray-700">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-200 rounded-lg  backdrop-blur-md md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent  md:dark:bg-transparent dark:border-gray-700">
                     <li><a wire:navigate href="{{ route('Home') }}"
                             class="block py-2 px-3 md:p-0 active-menus text-blue-600  dark:text-purple-400">Home</a>
                     </li>
@@ -433,14 +436,26 @@
     <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
         <div class="mx-auto max-w-screen-xl">
             <div class="md:flex md:justify-between">
-                <div class="mb-6 md:mb-0">
-                    <a href="https://flowbite.com" class="flex items-center">
-                        <img src="{{ asset('LOGO SMANSA.png') }}" class="mr-3 h-8" alt="FlowBite Logo" />
-                        <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PUSTAKA</span>
-                    </a>
+                <div class="mb-6 md:mb-0  items-center">
+                    <div class="items-center">
+                        <a href="https://flowbite.com" class="flex items-center">
+                            <img src="{{ asset('LOGO SMANSA.png') }}" class="mr-3 h-8" alt="FlowBite Logo" />
+                            <span
+                                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PUSTAKA</span>
+                        </a>
+                        <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
+                            class="hidden md:inline-flex block mt-10  items-center justify-center gap-2 px-3 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 group">
+                            <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2" />
+                            </svg>
+                            Admin Login
+                        </a>
+                    </div>
                 </div>
-                {{-- <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                         <ul class="text-gray-600 dark:text-gray-400">
@@ -474,8 +489,17 @@
                             </li>
                         </ul>
                     </div>
-                </div> --}}
+                </div>
             </div>
+             <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
+                class="inline-flex md:hidden block mt-10  items-center justify-center gap-2 px-3 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 group">
+                <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2" />
+                </svg>
+                Admin Login
+            </a>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a
@@ -515,6 +539,7 @@
                     </a>
                 </div>
             </div>
+           
         </div>
     </footer>
 
@@ -612,19 +637,19 @@
                 console.warn('Audio controls not found.');
                 return;
             }
-            // window.addEventListener('scroll', function onScroll() {
-            //     if (!hasPlayed) {
-            //         audio.play().then(() => {
-            //             playBtn.classList.add('hidden');
-            //             pauseBtn.classList.remove('hidden');
-            //         }).catch(err => {
-            //             console.log('Autoplay diblokir, perlu interaksi user:', err);
-            //         });
-            //         hasPlayed = true;
-            //     }
-            // }, {
-            //     once: true
-            // });
+            window.addEventListener('scroll', function onScroll() {
+                if (!hasPlayed) {
+                    audio.play().then(() => {
+                        playBtn.classList.add('hidden');
+                        pauseBtn.classList.remove('hidden');
+                    }).catch(err => {
+                        console.log('Autoplay diblokir, perlu interaksi user:', err);
+                    });
+                    hasPlayed = true;
+                }
+            }, {
+                once: true
+            });
         })
         // Jalankan saat Livewire load
         document.addEventListener('livewire:load', () => {

@@ -7,3 +7,5 @@ use App\Livewire\Home;
 // })->name('home');
 
 Route::get('/', Home::class)->name('Home');
+// admin/login filament
+// Route::get('/admin/login', Login::class)->name('admin/login');
