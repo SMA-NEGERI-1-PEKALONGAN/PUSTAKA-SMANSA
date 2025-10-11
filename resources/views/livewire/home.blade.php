@@ -564,7 +564,7 @@
                     </div>
                     <div class="flex items-center my-2 text-gray-500">
                         <span
-                            class="bg-green-100 text-gray-800 text-md font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
+                            class="bg-green-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
                             <svg class="mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -584,9 +584,9 @@
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full"
                                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                                alt="Jese Leos avatar" />
+                                alt="Admin Pustaka avatar" />
                             <div class="font-medium dark:text-white">
-                                <div>Jese Leos</div>
+                                <div>Admin Pustaka</div>
                                 <div class="text-sm font-light text-gray-500 dark:text-gray-400">Oct 14, 2022 | 12:00</div>
                             </div>
                         </div>
@@ -612,7 +612,7 @@
                     </div>
                     <div class="flex items-center my-2 text-gray-500">
                         <span
-                            class="bg-green-100 text-gray-800 text-md font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
+                            class="bg-green-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
                             <svg class="mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -632,9 +632,9 @@
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full"
                                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                                alt="Jese Leos avatar" />
+                                alt="Admin Pustaka avatar" />
                             <div class="font-medium dark:text-white">
-                                <div>Jese Leos</div>
+                                <div>Admin Pustaka</div>
                                 <div class="text-sm font-light text-gray-500 dark:text-gray-400">Oct 14, 2022 | 12:00</div>
                             </div>
                         </div>
@@ -660,7 +660,7 @@
                     </div>
                     <div class="flex items-center my-2 text-gray-500">
                         <span
-                            class="bg-green-100 text-gray-800 text-md font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
+                            class="bg-green-100 text-gray-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-white-800">
                             <svg class="mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -680,9 +680,9 @@
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full"
                                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                                alt="Jese Leos avatar" />
+                                alt="Admin Pustaka avatar" />
                             <div class="font-medium dark:text-white">
-                                <div>Jese Leos</div>
+                                <div>Admin Pustaka</div>
                                 <div class="text-sm font-light text-gray-500 dark:text-gray-400">Oct 14, 2022 | 12:00</div>
                             </div>
                         </div>
