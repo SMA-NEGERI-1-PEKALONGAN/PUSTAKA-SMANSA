@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('menu_id')->constrained('menus')->onDelete('cascade');
             $table->foreignId('template_id')->nullable()->constrained('templates')->onDelete('set null');
             $table->string('title')->nullable();
-            $table->timestamps();
                     
                     
             $table->index(['menu_id']);
