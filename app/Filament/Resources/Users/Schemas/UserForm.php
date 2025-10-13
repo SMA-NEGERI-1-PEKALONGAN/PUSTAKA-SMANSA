@@ -29,11 +29,12 @@ class UserForm
                     ->email()
                     ->unique(ignoreRecord: true),
                 TextInput::make('password')
-                    ->maxLength(255)
-                    ->required(fn (string $context): bool => $context === 'create')
+                    ->password()
+                    ->dehydrateStateUsing(fn ($state) => !empty($state) ? bcrypt($state) : null)
+                    ->dehydrated(fn ($state) => filled($state)) 
                     ->label('Password User')
                     ->placeholder('Masukan Password User')
-                    ->password(),
+                    ->required(fn (string $context) => $context === 'create'),
                 TextInput::make('password_confirmation')
                     ->maxLength(255)
                     ->label('Konfirmasi Password User')

@@ -2,7 +2,9 @@
 
 namespace App\Livewire;
 
+use App\Models\Menu;
 use Livewire\Component;
+use App\Models\MainMenu;
 
 class Home extends Component
 {

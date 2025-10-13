@@ -1,3 +1,20 @@
+<?php 
+use App\Models\MainMenu;
+use App\Models\Menu;
+
+$dataMainMenu = MainMenu::where('status', 1)->orderBy('order', 'asc')->get();
+$dataMenu = [];
+foreach ($dataMainMenu as $mainMenu) {
+    $detailMenu = Menu::where('main_menu_id', $mainMenu->id)->where('status', 1)->orderBy('order', 'asc')->get();
+    $dataMenu[] = [
+        'main_menu' => $mainMenu->name,
+        'slug' => $mainMenu->slug,
+        'type' => $mainMenu->menu_type,
+        'menus' => $detailMenu
+    ];
+}
+// dd($dataMenu);
+?>
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
@@ -192,230 +209,87 @@
                     <li><a wire:navigate href="{{ route('Home') }}"
                             class="block py-2 px-3 md:p-0 active-menus text-blue-600  dark:text-purple-400">Home</a>
                     </li>
-
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="profileMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">About
-                            Us
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="profileMenus"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sambutan
-                                        Kepsek</a>
+                    @foreach ($dataMenu as $dm)
+                        @if(isset($dm['menus']))
+                            {{-- {{ dd(count($dm['menus'])) }} --}}
+                            @if($dm['type'] == 'single')
+                                <li><a wire:navigate href="{{ route($dm['menus'][0]['slug']) }}" class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">{{ $dm['main_menu']}}</a>
                                 </li>
-
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Visi
-                                        & Misi</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Akreditasi</a>
-                                </li>
-                                {{-- <li aria-labelledby="dropdownNavbarLink">
-                                    <button id="doubleDropdownButton" data-dropdown-toggle="detailProfileMenu"
-                                        data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">About
-                                        Us<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="m1 1 4 4 4-4" />
-                                        </svg></button>
-                                    <div id="detailProfileMenu"
-                                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                            aria-labelledby="doubleDropdownButton">
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
-                                                    downloads</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li> --}}
-
-                            </ul>
-
-                        </div>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="layananMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Services
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="layananMenus"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sirkulasi</a>
-                                </li>
+                            @else
+                                @if(count($dm['menus']) > 5)
+                                    {{-- <li>
+                                        <button id="dropdownNavbarLink" data-dropdown-toggle="mega-menu-dropdown"
+                                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">About
+                                            Us
+                                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="mega-menu-dropdown"
+                                            class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
+                                            <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                                <ul class="space-y-4 py-2" aria-labelledby="mega-menu-dropdown-button">
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                            Sambutan Kepala Sekolah
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                            Resources
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"
+                                                            class="hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                            Pro Version
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li> --}}
+                                @else
+                                    <li>
+                                        <button id="dropdownNavbarLink" data-dropdown-toggle="{{ $dm['slug'] }}Menus"
+                                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400 cursor-pointer">{{ $dm['main_menu'] }}
+                                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <!-- Dropdown menu -->
+                                        <div id="{{ $dm['slug'] }}Menus"
+                                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="dropdownLargeButton">
+                                                @foreach ($dm['menus'] as $m)
+                                                    <li>
+                                                        <a wire:navigate href="{{ route('web', ['slug' => $m['slug']]) }}"
+                                                            class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">{{ $m['name'] }}</a>
+                                                    </li>
+                                                @endforeach
 
 
-                                {{-- <li aria-labelledby="dropdownNavbarLink">
-                                    <button id="doubleDropdownButton" data-dropdown-toggle="detailProfileMenu"
-                                        data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">About
-                                        Us<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="m1 1 4 4 4-4" />
-                                        </svg></button>
-                                    <div id="detailProfileMenu"
-                                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                            aria-labelledby="doubleDropdownButton">
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
-                                                    downloads</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li> --}}
 
-                            </ul>
+                                            </ul>
 
-                        </div>
-                    </li>
-                    <li><a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">
-
-                            Facilities
-                        </a>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="inovasiMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Innovation
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="inovasiMenus"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                </li>
-
-
-                            </ul>
-
-                        </div>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="eResourceMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">E-Resources
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="eResourceMenus"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Blogs</a>
-                                </li>
-
-
-                            </ul>
-
-                        </div>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="prestasiMenus"
-                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Achievements
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="prestasiMenus"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                </li>
-                                <li aria-labelledby="dropdownNavbarLink">
-                                    <button id="doubleDropdownButton" data-dropdown-toggle="detaileResourceMenu"
-                                        data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Profile<svg
-                                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="m1 1 4 4 4-4" />
-                                        </svg></button>
-                                    <div id="detaileResourceMenu"
-                                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                            aria-labelledby="doubleDropdownButton">
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My
-                                                    downloads</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </li>
+                                        </div>
+                                    </li>
+                                @endif
+                            @endif
+                        @endif
+                    @endforeach
+                   
 
                     <li><a href="#"
                             class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Contact
@@ -456,7 +330,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                    <div>
+                    {{-- <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                         <ul class="text-gray-600 dark:text-gray-400">
                             <li class="mb-4">
@@ -466,15 +340,15 @@
                                 <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                         <ul class="text-gray-600 dark:text-gray-400">
                             <li class="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                                <a href="https://github.com/lammmzt" class="hover:underline ">Github</a>
                             </li>
                             <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                <a href="https://discord.gg/lammm" class="hover:underline">Discord</a>
                             </li>
                         </ul>
                     </div>
@@ -491,7 +365,7 @@
                     </div>
                 </div>
             </div>
-             <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
+            <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
                 class="inline-flex md:hidden block mt-10  items-center justify-center gap-2 px-3 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 group">
                 <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -539,7 +413,7 @@
                     </a>
                 </div>
             </div>
-           
+
         </div>
     </footer>
 
@@ -650,18 +524,19 @@
             // }, {
             //     once: true
             // });
+
             // run audio when 10second
-            setTimeout(() => {
-                if (!hasPlayed) {
-                    audio.play().then(() => {
-                        playBtn.classList.add('hidden');
-                        pauseBtn.classList.remove('hidden');
-                    }).catch(err => {
-                        console.log('Autoplay diblokir, perlu interaksi user:', err);
-                    });
-                    hasPlayed = true;
-                }
-            }, 5000);
+            // setTimeout(() => {
+            //     if (!hasPlayed) {
+            //         audio.play().then(() => {
+            //             playBtn.classList.add('hidden');
+            //             pauseBtn.classList.remove('hidden');
+            //         }).catch(err => {
+            //             console.log('Autoplay diblokir, perlu interaksi user:', err);
+            //         });
+            //         hasPlayed = true;
+            //     }
+            // }, 5000);
         })
         // Jalankan saat Livewire load
         document.addEventListener('livewire:load', () => {

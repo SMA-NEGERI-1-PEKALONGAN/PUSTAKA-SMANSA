@@ -5,11 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class MainMenu extends Model
+class Template extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'order', 'menu_type', 'status','slug'];
+    protected $fillable = ['name', 'description', 'status'];
+    
+    public function fields()
+    {
+        return $this->hasMany(TemplateField::class);
+    }
     
     
     public function menus()
