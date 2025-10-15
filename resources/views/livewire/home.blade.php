@@ -226,7 +226,7 @@
                 <!-- motto -->
                 <div id="motto" role="tabpanel" aria-labelledby="motto-tab"
                     class="hidden p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-500">
-                    <h3 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">motto Sekolah</h3>
+                    <h3 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Motto Sekolah</h3>
                     <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
                         “Disiplin, Berprestasi, dan Berakhlak Mulia” — semangat kami untuk menumbuhkan karakter kuat,
                         tangguh, dan berdaya saing di era modern.
@@ -256,7 +256,7 @@
     <section class="relative bg-white dark:bg-gray-900 ">
         <!-- Glow Bulatan Kecil -->
         <div
-            class="absolute top-25 left-10 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+            class="absolute top-25 left-1/2 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
         </div>
 
         <div
@@ -425,19 +425,13 @@
     {{-- gallery --}}
     <section class="bg-white dark:bg-gray-900 overflow-hidden relative">
         <div
-            class="absolute top-25 left-1/3 w-32 h-32 bg-purple-600/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
+            class="absolute top-25 left-1/2 w-32 h-32 bg-purple-600/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-70 animate-pulse">
         </div>
 
         <div
             class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-200">
         </div>
 
-        <div
-            class="absolute bottom-20 left-1/3 w-20 h-20 bg-fuchsia-500/30 dark:bg-indigo-500/30 rounded-full blur-2xl opacity-70 animate-pulse delay-500">
-        </div>
-        <div
-            class="absolute bottom-10 right-1/4 w-16 h-16 bg-purple-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-70 animate-pulse delay-700">
-        </div>
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 relative mb-5">
             <div
                 class="mx-auto mb-8 max-w-screen-sm lg:mb-16 opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">

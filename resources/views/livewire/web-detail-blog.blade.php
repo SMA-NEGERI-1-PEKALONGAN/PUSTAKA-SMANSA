@@ -1,14 +1,10 @@
 <div>
-    <div class="relative px-6 py-14 mx-auto max-w-screen-xl text-center mt-16 mb-4\\">
+    <div class="relative px-6 py-14 mx-auto max-w-screen-xl text-center mt-16 ">
         <div
             class="absolute top-50 left-10 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-50 animate-pulse">
         </div>
         <div
             class="absolute top-20 left-1/3 w-42 h-42 bg-fuchsia-500/40 dark:bg-indigo-500/40 rounded-full blur-3xl opacity-50 animate-pulse">
-        </div>
-
-        <div
-            class="absolute top-40 right-20 w-24 h-24 bg-pink-500/30 dark:bg-purple-500/30 rounded-full blur-2xl opacity-50 animate-pulse delay-200">
         </div>
         <!-- Judul & Deskripsi -->
         <div class="mx-auto mb-16 max-w-2xl opacity-0 translate-y-10 transition-all duration-700 reveal delay-[300ms]">
@@ -72,11 +68,11 @@
 
     {{-- Section Blog --}}
     <section class="bg-white dark:bg-gray-900 py-16 mb-12">
-        <div class="max-w-screen-xl mx-auto  px-6">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
 
             <!-- ===== Konten Utama ===== -->
             <article
-                class=" bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                class="md:col-span-2 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
                 <!-- Gambar Utama -->
                 <div class="relative group">
                     <img class="w-full h-96 object-cover transition-transform duration-700 transform group-hover:scale-105"
@@ -89,6 +85,14 @@
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur!
                     </h1>
+
+                    <!-- Info Penulis -->
+                    <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+                        <span>By <a href="#" class="font-medium text-blue-600 hover:underline">John Doe</a></span>
+                        <span>•</span>
+                        <time datetime="2022-03-28" class="font-medium">Mar 28, 2022</time>
+                    </div>
+
                     <!-- Body Artikel -->
                     <div
                         class="prose prose-lg dark:prose-invert max-w-none text-gray-700 dark:text-gray-200 leading-relaxed">
@@ -102,54 +106,58 @@
                 </div>
             </article>
 
+            <!-- ===== Sidebar ===== -->
+            <aside class="space-y-8">
 
+                <!-- Search -->
+                <div
+                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Search</h2>
+                    <div class="relative">
+                        <input type="text" placeholder="Cari artikel..."
+                            class="w-full pl-10 pr-4 py-2 text-sm border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-400 dark:bg-gray-900 dark:text-white focus:outline-none transition">
+                        <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+                        </svg>
+                    </div>
+                </div>
 
-            <nav aria-label="Page navigation example">
-                <ul class="flex items-center -space-x-px h-8 text-sm">
-                    <li>
+                <!-- Related Posts -->
+                <div
+                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Related Posts</h2>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#"
+                                class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Cara
+                                Membuat Blog dengan Tailwind</a></li>
+                        <li><a href="#"
+                                class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Optimasi
+                                SEO untuk Blog Modern</a></li>
+                        <li><a href="#"
+                                class="block text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Panduan
+                                Desain UI Sederhana</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tags -->
+                <div
+                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
+                    <h2 class="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Popular Tags</h2>
+                    <div class="flex flex-wrap gap-2">
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Previous</span>
-                            <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M5 1 1 5l4 4" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
+                            class="px-3 py-1.5 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-900 dark:hover:text-white transition">Tailwind</a>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                    </li>
-                    <li>
+                            class="px-3 py-1.5 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-900 dark:hover:text-white transition">Laravel</a>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-current="page"
-                            class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                    </li>
-                    <li>
+                            class="px-3 py-1.5 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-900 dark:hover:text-white transition">CSS</a>
                         <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <span class="sr-only">Next</span>
-                            <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 9 4-4-4-4" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                            class="px-3 py-1.5 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-900 dark:hover:text-white transition">Blog</a>
+                    </div>
+                </div>
+
+            </aside>
 
         </div>
     </section>

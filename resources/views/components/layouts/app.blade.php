@@ -210,14 +210,15 @@ foreach ($dataMainMenu as $mainMenu) {
                             class="block py-2 px-3 md:p-0 active-menus text-blue-600  dark:text-purple-400">Home</a>
                     </li>
                     @foreach ($dataMenu as $dm)
-                        @if(isset($dm['menus']) && $dm['menus']->isNotEmpty())
-                            {{-- {{ dd($dm['menus']) }} --}}
-                            @if($dm['type'] == 'single')
-                                <li><a wire:navigate href="{{ route($dm['menus']->first()['slug']) }}" class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">{{ $dm['main_menu']}}</a>
-                                </li>
-                            @else
-                                @if(count($dm['menus']) > 5)
-                                    {{-- <li>
+                    @if(isset($dm['menus']) && $dm['menus']->isNotEmpty())
+                    {{-- {{ dd($dm['menus']) }} --}}
+                    @if($dm['type'] == 'single')
+                    <li><a wire:navigate href="{{ route($dm['menus']->first()['slug']) }}"
+                            class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">{{ $dm['main_menu']}}</a>
+                    </li>
+                    @else
+                    @if(count($dm['menus']) > 5)
+                    {{-- <li>
                                         <button id="dropdownNavbarLink" data-dropdown-toggle="mega-menu-dropdown"
                                             class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">About
                                             Us
@@ -258,38 +259,38 @@ foreach ($dataMainMenu as $mainMenu) {
                                             </div>
                                         </div>
                                     </li> --}}
-                                @else
-                                    <li>
-                                        <button id="dropdownNavbarLink" data-dropdown-toggle="{{ $dm['slug'] }}Menus"
-                                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400 cursor-pointer">{{ $dm['main_menu'] }}
-                                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="none" viewBox="0 0 10 6">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                                            </svg></button>
-                                        <!-- Dropdown menu -->
-                                        <div id="{{ $dm['slug'] }}Menus"
-                                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                                aria-labelledby="dropdownLargeButton">
-                                                @foreach ($dm['menus'] as $m)
-                                                    <li>
-                                                        <a wire:navigate href="{{ route('web', ['slug' => $m['slug']]) }}"
-                                                            class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">{{ $m['name'] }}</a>
-                                                    </li>
-                                                @endforeach
+                    @else
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="{{ $dm['slug'] }}Menus"
+                            class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-200 md:hover:bg-transparent md:border-0 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400 cursor-pointer">{{ $dm['main_menu'] }}
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="{{ $dm['slug'] }}Menus"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownLargeButton">
+                                @foreach ($dm['menus'] as $m)
+                                <li>
+                                    <a wire:navigate href="{{ route('web', ['slug' => $m['slug']]) }}"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">{{ $m['name'] }}</a>
+                                </li>
+                                @endforeach
 
 
 
-                                            </ul>
+                            </ul>
 
-                                        </div>
-                                    </li>
-                                @endif
-                            @endif
-                        @endif
+                        </div>
+                    </li>
+                    @endif
+                    @endif
+                    @endif
                     @endforeach
-                   
+
 
                     <li><a href="#"
                             class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">Contact
@@ -307,15 +308,16 @@ foreach ($dataMainMenu as $mainMenu) {
     {{ $slot }}
 
     {{-- footer --}}
-    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+    <footer class="p-4 bg-gray-50 sm:p-6 dark:bg-gray-800">
         <div class="mx-auto max-w-screen-xl">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0  items-center">
                     <div class="items-center">
                         <a href="https://flowbite.com" class="flex items-center">
                             <img src="{{ asset('LOGO SMANSA.png') }}" class="mr-3 h-8" alt="FlowBite Logo" />
-                            <span
-                                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PUSTAKA</span>
+                            <span class="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white">
+                                PUSTAKA<span class="text-blue-600">+</span>
+                            </span>
                         </a>
                         <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
                             class="hidden md:inline-flex block mt-10  items-center justify-center gap-2 px-3 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 group">
