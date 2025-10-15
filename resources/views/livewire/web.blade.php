@@ -1,5 +1,5 @@
 <div>
-    <div class="relative px-6 py-14 mx-auto max-w-screen-xl text-center mt-16 mb-4\\">
+    <div class="relative px-6 py-14 mx-auto max-w-screen-xl text-center mt-16 mb-4">
         <div
             class="absolute top-50 left-10 w-32 h-32 bg-purple-500/40 dark:bg-blue-500/40 rounded-full blur-3xl opacity-50 animate-pulse">
         </div>
@@ -232,9 +232,9 @@
 
     </section>
 
-    <section class="max-w-screen-xl mx-auto mb-12 flex justify-center items-center">
+    <section class="max-w-screen-xl mx-auto mb-12 flex justify-center items-center reveal reveal delay-[300ms]">
         <nav aria-label="Page navigation"
-            class=" backdrop-blur-md rounded-2xl shadow-sm px-4 py-2">
+            class=" backdrop-blur-md rounded-2xl px-4 py-2">
             <ul class="flex items-center space-x-1 text-base">
                 <!-- Previous -->
                 <li>
