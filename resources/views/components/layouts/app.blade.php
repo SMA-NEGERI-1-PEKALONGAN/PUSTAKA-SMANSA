@@ -213,7 +213,7 @@ foreach ($dataMainMenu as $mainMenu) {
                     @if(isset($dm['menus']) && $dm['menus']->isNotEmpty())
                     {{-- {{ dd($dm['menus']) }} --}}
                     @if($dm['type'] == 'single')
-                    <li><a wire:navigate href="{{ route($dm['menus']->first()['slug']) }}"
+                    <li><a wire:navigate href="{{ route('web', ['slug' => $dm['menus']->first()['slug']])}}"
                             class="block py-2 px-3 text-gray-900 rounded hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-purple-400">{{ $dm['main_menu']}}</a>
                     </li>
                     @else
