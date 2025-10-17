@@ -41,20 +41,25 @@ class ContentForm
             ->required()
             ->maxLength(255),
 
-        Builder::make('fields')
+        Builder::make('values')
             ->label('Fields')
+            ->live() // supaya ketika edit, data real-time sinkron
             ->blocks(function (callable $get) {
                 $menuId = $get('menu_id');
+
                 if (! $menuId) {
                     return [];
                 }
 
                 $menu = Menu::with('template')->find($menuId);
+
                 if (! $menu || ! $menu->template) {
                     return [];
                 }
 
-                $fields = TemplateField::where('template_id', $menu->template->id)->orderBy('order', 'asc')->get();
+                $fields = TemplateField::where('template_id', $menu->template->id)
+                    ->orderBy('order', 'asc')
+                    ->get();
 
                 return $fields->map(function ($field) {
                     $meta = $field->meta ?? [];
@@ -90,7 +95,7 @@ class ContentForm
                 })->toArray();
             })
             ->columnSpanFull()
-            ->dehydrated(true),
+            ->dehydrated(true), // penting supaya datanya tersimpan ke kolom JSON
         ]);
     }
 }

@@ -76,12 +76,12 @@
 
             <!-- ===== Konten Utama ===== -->
             <article
-                class=" bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                class=" bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden reveal reveal delay-[300ms]">
                 <!-- Gambar Utama -->
                 <div class="relative group">
-                    <img class="w-full h-96 object-cover transition-transform duration-700 transform group-hover:scale-105"
+                    {{-- <img class="w-full h-96 object-cover transition-transform "
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Gambar Kegiatan">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div> --}}
                 </div>
 
                 <!-- Konten -->

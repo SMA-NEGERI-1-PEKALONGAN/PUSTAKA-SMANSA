@@ -279,9 +279,6 @@ foreach ($dataMainMenu as $mainMenu) {
                                         class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">{{ $m['name'] }}</a>
                                 </li>
                                 @endforeach
-
-
-
                             </ul>
 
                         </div>
@@ -319,7 +316,7 @@ foreach ($dataMainMenu as $mainMenu) {
                                 PUSTAKA<span class="text-blue-600">+</span>
                             </span>
                         </a>
-                        <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
+                        <a href="{{ route('filament.admin.auth.login') }}" 
                             class="hidden md:inline-flex block mt-10  items-center justify-center gap-2 px-3 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 group">
                             <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -367,7 +364,7 @@ foreach ($dataMainMenu as $mainMenu) {
                     </div>
                 </div>
             </div>
-            <a href="{{ route('filament.admin.auth.login') }}" wire:navigate
+            <a href="{{ route('filament.admin.auth.login') }}" 
                 class="inline-flex md:hidden block mt-10  items-center justify-center gap-2 px-3 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 group">
                 <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform duration-300"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

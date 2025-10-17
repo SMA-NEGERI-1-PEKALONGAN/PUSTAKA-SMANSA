@@ -72,16 +72,16 @@
 
             <!-- ===== Konten Utama ===== -->
             <article
-                class="md:col-span-2 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
-                <!-- Gambar Utama -->
+                class="md:col-span-2 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden reveal reveal delay-[300ms]">
+                <!-- Gambar Utam a -->
                 <div class="relative group">
-                    <img class="w-full h-96 object-cover transition-transform duration-700 transform group-hover:scale-105"
+                    <img class="w-full h-62 md:h-96 lg:h-96 object-cover"
                         src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Gambar Kegiatan">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 </div>
 
                 <!-- Konten -->
-                <div class="p-10">
+                <div class="p-5">
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur!
                     </h1>
@@ -100,7 +100,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perferendis.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perferendis.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat illum distinctio ratione velit dolorum expedita dolor voluptate aut ea ad repudiandae minima animi voluptatum dolores eos quibusdam voluptates exercitationem, omnis adipisci ab, perferendis cumque unde quasi laborum! Et, neque natus quos debitis aliquid dicta, nobis omnis facere placeat cupiditate ea magnam corrupti quae esse! Illum voluptates delectus earum dicta atque hic alias ipsum impedit eligendi, excepturi consequatur praesentium quia magni nulla deleniti maxime quidem veniam nihil, culpa ipsa enim obcaecati porro. Facere numquam quasi facilis minima molestias id eaque nemo consectetur pariatur hic temporibus accusamus quidem odit iste, dolores odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt itaque, autem placeat soluta tenetur corporis inventore suscipit mollitia voluptates similique! Deserunt perferendis suscipit, cum maiores adipisci at officia quos enim accusantium, iure nostrum molestiae provident quo blanditiis expedita nobis eius illo, quis fuga aspernatur alias? Nostrum aut, consequatur aspernatur quia optio obcaecati iure id incidunt? Obcaecati harum, odio quo officia quod eum exercitationem, aliquam, deleniti dignissimos omnis eos! Quae, iure rerum. Necessitatibus debitis sed fugiat atque quisquam. Ut cum blanditiis est distinctio reprehenderit ipsa quos doloremque, numquam voluptas officiis corrupti! Maiores officiis natus dolor reiciendis et aliquid unde vero autem?
                         </p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
 
                 <!-- Search -->
                 <div
-                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
+                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm reveal reveal delay-[300ms]">
                     <h2 class="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Search</h2>
                     <div class="relative">
                         <input type="text" placeholder="Cari artikel..."
@@ -126,7 +126,7 @@
 
                 <!-- Related Posts -->
                 <div
-                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
+                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm reveal reveal delay-[300ms]">
                     <h2 class="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Related Posts</h2>
                     <ul class="space-y-3 text-sm">
                         <li><a href="#"
@@ -143,7 +143,7 @@
 
                 <!-- Popular Tags -->
                 <div
-                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm">
+                    class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-6 shadow-sm mb-2 reveal reveal delay-[300ms]">
                     <h2 class="text-base font-semibold text-gray-800 dark:text-gray-100 mb-4">Popular Tags</h2>
                     <div class="flex flex-wrap gap-2">
                         <a href="#"

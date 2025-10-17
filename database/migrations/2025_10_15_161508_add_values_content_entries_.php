@@ -12,14 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('content_entries', function (Blueprint $table) {
-           $table->softDeletes();
+            $table->json('values')->nullable()->after('menu_id');
         });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
         Schema::table('content_entries', function (Blueprint $table) {
-            $table->dropSoftDeletes();
+            $table->dropColumn('values');
         });
     }
 };

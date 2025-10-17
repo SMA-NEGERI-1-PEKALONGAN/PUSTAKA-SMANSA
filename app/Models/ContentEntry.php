@@ -12,8 +12,12 @@ class ContentEntry extends Model
     use HasFactory;
     use SoftDeletes;
     
-    protected $fillable = ['menu_id', 'template_id', 'title', 'user_id'];
+    protected $fillable = ['menu_id', 'template_id', 'title', 'user_id','values'];
     
+    protected $casts = [
+        'values' => 'array', // JSON akan di-cast ke array otomatis
+    ];
+
     public function menu()
     {
         return $this->belongsTo(Menu::class);

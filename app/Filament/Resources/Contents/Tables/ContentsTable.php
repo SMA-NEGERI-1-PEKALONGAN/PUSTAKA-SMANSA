@@ -26,8 +26,11 @@ class ContentsTable
                 TrashedFilter::make(),
                 SelectFilter::make('menu_id')
                     ->relationship('menu', 'name')
-                    ->label('Menu'),
+                    ->label('Menu')
+                    ->searchable()
+                    ->placeholder('Pilih Menu'),
             ])
+            
             ->recordActions([
                 EditAction::make(),
             ])
