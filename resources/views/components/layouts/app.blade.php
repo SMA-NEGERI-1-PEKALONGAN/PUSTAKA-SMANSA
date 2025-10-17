@@ -525,17 +525,17 @@ foreach ($dataMainMenu as $mainMenu) {
             // });
 
             // run audio when 10second
-            // setTimeout(() => {
-            //     if (!hasPlayed) {
-            //         audio.play().then(() => {
-            //             playBtn.classList.add('hidden');
-            //             pauseBtn.classList.remove('hidden');
-            //         }).catch(err => {
-            //             console.log('Autoplay diblokir, perlu interaksi user:', err);
-            //         });
-            //         hasPlayed = true;
-            //     }
-            // }, 5000);
+            setTimeout(() => {
+                if (!hasPlayed) {
+                    audio.play().then(() => {
+                        playBtn.classList.add('hidden');
+                        pauseBtn.classList.remove('hidden');
+                    }).catch(err => {
+                        console.log('Autoplay diblokir, perlu interaksi user:', err);
+                    });
+                    hasPlayed = true;
+                }
+            }, 5000);
         })
         // Jalankan saat Livewire load
         document.addEventListener('livewire:load', () => {
