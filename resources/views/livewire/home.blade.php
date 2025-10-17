@@ -210,9 +210,7 @@
                             <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                                 Assalamu’alaikum Warahmatullahi Wabarakatuh.
                                 <br><br>
-                                Selamat datang di portal resmi sekolah kami. Kami berkomitmen untuk memberikan
-                                pendidikan terbaik yang berlandaskan nilai-nilai keilmuan, akhlak mulia, dan inovasi
-                                agar peserta didik mampu menghadapi tantangan global dengan semangat unggul.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates alias, minus, accusantium, natus ab tempora assumenda repellat ea eligendi ipsa atque numquam cupiditate. Hic quia, possimus aspernatur, sapiente iusto voluptatibus adipisci odio praesentium nemo, velit voluptate fugiat at expedita quibusdam? Porro quo velit dolorum officiis hic asperiores nesciunt esse quasi itaque. Vero aliquam illo iure vitae culpa repudiandae, architecto quidem voluptatum, voluptates cupiditate unde possimus commodi eveniet eum quisquam ut odio? Laudantium est quae omnis porro harum, nulla neque at illo adipisci eum ea aspernatur? Autem unde quia temporibus sunt rem? Commodi soluta ea vitae quis beatae vel cupiditate qui..
                             </p>
                             <p class="font-semibold text-indigo-600 dark:text-indigo-400 mt-4">
                                 — Wachid Mucharom, S.Pd., M.Pd.
@@ -228,8 +226,7 @@
                     class="hidden p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-500">
                     <h3 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Motto Sekolah</h3>
                     <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        “Disiplin, Berprestasi, dan Berakhlak Mulia” — semangat kami untuk menumbuhkan karakter kuat,
-                        tangguh, dan berdaya saing di era modern.
+                        “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sint animi accusantium sapiente autem excepturi at ipsam eveniet odio harum.
                     </p>
                 </div>
 
@@ -238,12 +235,10 @@
                     class="hidden p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-500">
                     <h3 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Visi & Misi</h3>
                     <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-                        <strong>Visi:</strong> Menjadi sekolah unggul yang melahirkan generasi cerdas, kreatif, dan
-                        berkarakter.
+                        <strong>Visi:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis..
                     </p>
                     <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <strong>Misi:</strong> Menyelenggarakan pendidikan berkualitas, menumbuhkan budaya literasi dan
-                        inovasi, serta memperkuat nilai-nilai moral dan spiritual.
+                        <strong>Misi:</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nobis sapiente totam eos ratione nemo aspernatur necessitatibus earum, debitis optio?.
                     </p>
                 </div>
             </div>
