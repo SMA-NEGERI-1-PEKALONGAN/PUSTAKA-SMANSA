@@ -53,6 +53,7 @@ return [
     */
 
     'url' => env('APP_URL', 'https://perpus.sman1pekalongan.sch.id'),
+    // 'url' => env('APP_URL', 'https://localhost:8000'),
 
     /*
     |--------------------------------------------------------------------------
